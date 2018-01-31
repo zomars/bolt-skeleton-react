@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import PageHome from './containers/PageHome'
+import Index from './containers/Index'
 
 class App extends Component {
   constructor(props) {
@@ -45,9 +45,9 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="App">
+        <div>
           <Header />
-          <Route exact path="/" component={PageHome}/>
+          <Route exact path="/" component={Index}/>
           <Footer
             menuItems={mainMenu}
             menuError={error}

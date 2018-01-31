@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import FreshInstall from '../components/FreshInstall'
 import RecordFooter from '../components/RecordFooter'
 
-class PageHome extends Component {
+class Index extends Component {
     constructor(props) {
     super(props)
     this.state = {
@@ -63,4 +63,4 @@ class PageHome extends Component {
   }
 }
 
-export default PageHome
+export default Index
