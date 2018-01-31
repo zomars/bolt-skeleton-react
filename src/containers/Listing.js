@@ -4,6 +4,7 @@ class Listing extends Component {
    render() {
     return (
       <div>
+          ContentType: {this.props.match.params.contentType}
         {/*
         {# This template is used for 'listings': Generic pages that list a number of
            records from a certain contenttype. These records are available as an array

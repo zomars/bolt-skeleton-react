@@ -4,6 +4,8 @@ class Record extends Component {
    render() {
     return (
       <div>
+          ContentType: {this.props.match.params.contentType} <br/>
+          Id: {this.props.match.params.id}
         {/*
         <h1>{{ record.title }}</h1>
 

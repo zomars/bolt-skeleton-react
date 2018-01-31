@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
   Route,
+  Switch,
 } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Index from './containers/Index'
+import Search from './containers/Search'
+import Listing from './containers/Listing'
+import Record from './containers/Record'
 
 class App extends Component {
   constructor(props) {
@@ -47,7 +51,12 @@ class App extends Component {
       <Router>
         <div>
           <Header />
-          <Route exact path="/" component={Index}/>
+          <Switch>
+            <Route exact path="/" component={Index}/>
+            <Route path="/search" component={Search}/>
+            <Route path="/:contentType/:id" component={Record}/>
+            <Route path="/:contentType" component={Listing}/>
+          </Switch>
           <Footer
             menuItems={mainMenu}
             menuError={error}
