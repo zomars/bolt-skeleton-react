@@ -24,7 +24,11 @@ const SubMenuItem = (props) => {
       }${isCurrent ? ' active' : ''}`
     }>
 
-      <CustomLink to={path} title={item.title || null}>
+      <CustomLink
+        to={path}
+        title={item.title}
+        className={item.class}
+      >
         {item.label}
       </CustomLink>
 
