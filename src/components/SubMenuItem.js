@@ -16,12 +16,12 @@ const SubMenuItem = (props) => {
   const isCurrent = null
 
   return (
-    <li className={`index-${loopIndex}
-      ${item.path === ' homepage' ? ' menu-text' : ''}
-      ${loopFirst ? ' first' : ''}
-      ${loopLast ? ' last' : ''}
-      ${(item.submenu && withsubmenus) ? ' is-dropdown-submenu-parent' : ''}
-      ${isCurrent ? ' active' : ''}`
+    <li className={`index-${loopIndex
+      }${item.path === ' homepage' ? ' menu-text' : ''
+      }${loopFirst ? ' first' : ''
+      }${loopLast ? ' last' : ''
+      }${(item.submenu && withsubmenus) ? ' is-dropdown-submenu-parent' : ''
+      }${isCurrent ? ' active' : ''}`
     }>
 
       <CustomLink to={path} title={item.title || null}>
